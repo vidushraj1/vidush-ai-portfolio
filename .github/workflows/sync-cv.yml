@@ -1,0 +1,20 @@
+name: Sync CV into portfolio
+on:
+  push:
+    paths: ["public/CV.pdf"]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/sync-cv.mjs --force
+        env: { ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}" }
+      - name: Commit updated profile
+        run: |
+          git config user.name "cv-sync-bot"; git config user.email "bot@users.noreply.github.com"
+          git add src/data
+          git diff --cached --quiet || (git commit -m "chore: sync profile from CV" && git push)

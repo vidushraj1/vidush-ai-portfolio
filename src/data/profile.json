@@ -1,0 +1,47 @@
+{
+  "name": "Vidush Raj Selvaraj",
+  "title": "AI Engineer",
+  "roles": ["AI Engineer", "Generative AI Engineer", "RAG Engineer", "Agentic AI Engineer", "Full-Stack AI Engineer", "Conversational AI Engineer", "AI Solutions Architect"],
+  "tagline": "I architect intelligent AI systems - agents that talk, reason, retrieve, and act and integrate them into production-ready, full-scale SaaS applications.",
+  "location": "Wattala, Sri Lanka (UTC+5:30), remote",
+  "email": "vidushrajselvaraj19@gmail.com",
+  "links": { "github": "https://github.com/vidushraj1", "linkedin": "https://www.linkedin.com/in/vidushraj-selvaraj-600a38222/" },
+  "summary": [
+    "AI Engineer with 2+ years of experience building and deploying production-grade Generative AI systems, multi-agent workflows and real-time voice assistants, grounded in a First-Class Honours BEng in Software Engineering.",
+    "Hands-on across the Google Cloud AI stack, the Microsoft AI stack and Google Workspace automation. I build MCP servers, implement RAG on managed and open-source platforms, and advise companies on AI architecture."
+  ],
+  "stats": [["2+", "years in production AI"], ["MCP · A2A", "agent protocols"], ["1st Class", "BEng (Hons)"]],
+  "skills": [
+    { "group": "Agentic AI & Protocols", "items": ["Google ADK", "A2A", "MCP Servers", "Vertex AI Agent Builder", "Semantic Kernel", "LangChain", "LlamaIndex", "Gemini Live API"] },
+    { "group": "RAG & Retrieval", "items": ["Vertex AI RAG Engine", "Azure AI Search", "Qdrant", "FAISS", "Pinecone", "Cohere"] },
+    { "group": "Models & Tuning", "items": ["Vertex AI Training", "Supervised Fine-Tuning", "TensorFlow", "Hugging Face", "Transformers", "NLP"] },
+    { "group": "Backend & Engineering", "items": ["Python", "Java", "TypeScript", "Node.js", "FastAPI", "Spring Boot", "WebSockets"] },
+    { "group": "Cloud & Automation", "items": ["Google Cloud", "Cloud Run", "Microsoft Foundry", "Copilot Studio", "n8n", "Docker", "GitHub Actions"] },
+    { "group": "Frontend & Mobile", "items": ["React", "Next.js", "React Native", "Flutter"] }
+  ],
+  "experience": [
+    { "id": "finetech", "role": "AI Engineer", "company": "Finetech Consultancy, Sri Lanka", "period": "Oct 2025 – Oct 2026", "points": [
+      "Engineered AXON, a multi-lingual AI voice assistant, with Python, FastAPI, WebSockets and the Gemini Live API.",
+      "Built WebRTC voice activity detection for interruptions and connected the assistant to PBX networks via MCP for autonomous call routing.",
+      "Built multi-agent systems with Google ADK and A2A on Vertex AI, and trained, fine-tuned and deployed models there.",
+      "Designed a secure RAG pipeline with Cohere and Qdrant, plus managed RAG with Vertex AI RAG Engine and Azure AI Search.",
+      "Deployed stateless backends on Cloud Run with Secret Manager, Cloud IAM and Speech-to-Text V2."] },
+    { "id": "freelance", "role": "AI Consultant & AI Architect", "company": "Freelance, Remote", "period": "Jul 2024 – Oct 2025", "points": [
+      "Advised companies on AI architecture: solution design, LLM and cloud choices, managed versus open-source RAG.",
+      "Deployed secure RAG pipelines and n8n workflows for data extraction and business processes.",
+      "Replaced legacy applications with autonomous multi-agent workflows using LangChain, OpenAI and Gemini."] },
+    { "id": "dinetap", "role": "QA Intern", "company": "DineTap, Singapore", "period": "Jul 2023 – Jul 2024", "points": [
+      "Ran manual and regression testing for the app and website, with documented test plans.",
+      "Worked with developers in Agile sprints to reproduce and fix critical bugs, tracked in ClickUp."] }
+  ],
+  "projects": [
+    { "id": "cliniguide", "title": "CliniGuide", "category": "ai", "image": "projects/cliniguide.webp", "description": "A personalized medication recommendation mobile app built with Flutter and an LLM backend, using a custom RAG knowledge base and Chain of Thought prompting for accurate, context-aware suggestions.", "tech": ["Flutter", "Node.js", "Flask", "LLM", "RAG", "FAISS", "Knowledge Distillation"], "demo": "", "repo": "https://github.com/vidushraj1" },
+    { "id": "supreme", "title": "Supreme Visualization", "category": "ai", "image": "projects/supreme.webp", "description": "A deep learning system that uses CNN, RNN and LSTM to detect anomalies in uploaded CCTV footage, with a UI built in Python and Tkinter.", "tech": ["Python", "Deep Learning", "CNN", "RNN", "LSTM", "Tkinter"], "demo": "", "repo": "https://github.com/vidushraj1" },
+    { "id": "cruise", "title": "Cruise Ship Management App", "category": "fullstack", "image": "projects/cruise.webp", "description": "A Java CLI tool modernised into a cloud-native web app with a React/TypeScript frontend and Spring Boot backend: bookings, dynamic waiting list, expenses and data import/export.", "tech": ["React", "TypeScript", "Spring Boot", "Docker", "Google Cloud", "Mantine UI", "Framer Motion"], "demo": "", "repo": "https://github.com/vidushraj1" },
+    { "id": "skin", "title": "Skin Consultation Web App", "category": "fullstack", "image": "projects/skin.webp", "description": "A legacy Java Swing app re-architected as a full-stack platform with role-based patient access and a JWT-secured admin dashboard, on Cloud Run with MongoDB and Cloud Storage.", "tech": ["React", "Spring Boot", "MongoDB", "Spring Security (JWT)", "Cloud Run", "Docker"], "demo": "", "repo": "https://github.com/vidushraj1" },
+    { "id": "progression", "title": "University Progression Calculator", "category": "fullstack", "image": "projects/progression.webp", "description": "A Python CLI re-engineered into a web app: React/TypeScript frontend, stateless Flask REST API on Cloud Run, and GitHub Actions CI/CD.", "tech": ["React", "TypeScript", "Flask", "Cloud Run", "GitHub Actions"], "demo": "", "repo": "https://github.com/vidushraj1" },
+    { "id": "ceylon", "title": "Travel Ceylon", "category": "fullstack", "image": "projects/ceylon.webp", "description": "A group-built tourist site for Sri Lanka, refactored from HTML, CSS and JavaScript into an optimised React + Vite app on GitHub Pages.", "tech": ["React", "Vite", "JavaScript"], "demo": "", "repo": "https://github.com/vidushraj1" }
+  ],
+  "education": [{ "id": "iit", "degree": "BEng (Hons) Software Engineering", "honours": "First-Class Honours", "school": "Informatics Institute of Technology (IIT)", "note": "Affiliated with the University of Westminster, UK · Graduated November 2025", "period": "Sep 2021 – Sep 2025" }],
+  "languages": ["English", "Sinhala", "Tamil"]
+}
