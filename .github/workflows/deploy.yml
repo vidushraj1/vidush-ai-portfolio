@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: 22
         env:
-          PUBLIC_BOOKING_URL: ${{ vars.PUBLIC_BOOKING_URL }}
           PUBLIC_APPS_SCRIPT_URL: ${{ vars.PUBLIC_APPS_SCRIPT_URL }}
   deploy:
     needs: build
