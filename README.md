@@ -1,43 +1,69 @@
-# Astro Starter Kit: Minimal
+# Vidush Raj Selvaraj | AI Engineer Portfolio
+
+Personal portfolio built with Astro, React, Tailwind CSS v4 and Framer Motion.
+
+**Live site:** https://vidushraj1.github.io/vidush-ai-portfolio/
+
+## Features
+
+- Futuristic UI: neural-network canvas background, custom cursor, 3D tilt portrait, animated navigation with scroll progress
+- Dark and light theme, remembered between visits
+- Meeting booking that reads free times from Google Calendar and creates an event with a Google Meet link
+- Contact form that delivers straight to Gmail, with no third-party service
+- Project cards with screenshots and filters
+- All content lives in one file: `src/data/profile.json`
+
+## Tech stack
+
+| Area | Tools |
+| --- | --- |
+| Framework | Astro 7, React 19 |
+| Styling | Tailwind CSS v4, CSS variables for theming |
+| Animation | Framer Motion |
+| Backend | Google Apps Script (Calendar, Meet, Mail) |
+| Hosting | GitHub Pages via GitHub Actions |
+
+## Quick start
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+cp .env.example .env     # then fill in the values
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open the URL the terminal prints. Because `base` is set, it ends with `/vidush-ai-portfolio/`.
 
-## 🚀 Project Structure
+## Scripts
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Build the site into `dist/` |
+| `npm run preview` | Serve the last build |
+
+## Project structure
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+public/              CV.pdf, profile.jpg, projects/*.jpg, favicon
+src/components/      Hero, Portrait, Nav, About, Experience, Projects, Contact, BookingModal, Background, Cursor
+src/data/profile.json   All text content (edit this to change the site)
+src/layouts/         Page shell
+src/pages/index.astro   Page layout
+src/styles/global.css   Theme colors and shared classes
+apps-script/Code.gs  Backend code, pasted into script.google.com
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Editing content
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Text, projects, links, experience: edit `src/data/profile.json`.
+- Downloadable CV: replace `public/CV.pdf`.
+- Project screenshots: put 1200x750 JPGs in `public/projects/` and add `"image": "projects/name.jpg"` to the project.
+- Colors: the variables at the top of `src/styles/global.css`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Deployment
 
-## 🧞 Commands
+Pushing to `main` builds and deploys through `.github/workflows/deploy.yml`. See [SETUP.md](SETUP.md) for the one-time setup.
 
-All commands are run from the root of the project, from a terminal:
+## License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+All rights reserved. Please don't reuse the content or photos.
