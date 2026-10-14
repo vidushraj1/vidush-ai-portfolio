@@ -43,7 +43,7 @@ export default function Nav() {
         boxShadow: scrolled ? "0 12px 40px -22px var(--ac)" : "none",
       }}
     >
-      <div className={`mx-auto flex max-w-6xl items-center gap-1 px-6 transition-all duration-300 ${scrolled ? "h-14" : "h-16"}`}>
+      <div className={`mx-auto flex max-w-6xl items-center gap-1 px-4 transition-all duration-300 sm:px-6 ${scrolled ? "h-14" : "h-16"}`}>
         <a href="#top" className="mono mr-auto flex items-center gap-2 font-medium">
           <motion.i
             className="size-2.5 rounded-sm"

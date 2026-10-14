@@ -25,15 +25,15 @@ export default function Projects() {
   const list = (p.projects as Project[]).filter((x) => f === "all" || x.category === f);
   return (
     <Section id="projects" kicker="projects" title="Selected work">
-      <div className="mb-8 flex gap-2">
+      <div className="mb-6 flex flex-wrap gap-2 sm:mb-8">
         {tabs.map(([k, l]) => <button key={k} onClick={() => setF(k)} aria-pressed={f === k} className="btn !py-1.5 !text-sm" style={f === k ? { background: "var(--tx)", color: "var(--bg)" } : {}}>{l}</button>)}
       </div>
-      <motion.div layout className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div layout className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
         <AnimatePresence mode="popLayout">
           {list.map((x) => (
             <motion.article layout key={x.id} initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: .96 }} className="card flex flex-col">
               <Cover x={x} />
-              <div className="flex flex-1 flex-col gap-3 p-5">
+              <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
                 <h3 className="text-lg font-semibold">{x.title}</h3>
                 <p className="flex-1 text-sm" style={{ color: "var(--mu)" }}>{x.description}</p>
                 <div className="flex flex-wrap gap-1.5">{x.tech.map((t) => <span key={t} className="chip">{t}</span>)}</div>

@@ -20,8 +20,8 @@ export default function Contact() {
   }
   return (
     <Section id="contact" kicker="contact" title="Book a call or ask me anything">
-      <div className="grid gap-5 lg:grid-cols-2">
-        <div className="card flex flex-col justify-between p-6">
+      <div className="grid gap-4 sm:gap-5 lg:grid-cols-2">
+        <div className="card flex flex-col justify-between p-4 sm:p-6">
           <div>
             <h3 className="mb-2 text-lg font-semibold">Schedule a meeting</h3>
             <p className="mb-5 text-sm" style={{ color: "var(--mu)" }}>Pick a free slot straight from my Google Calendar. You'll get a calendar invite with a Google Meet link.</p>
@@ -31,13 +31,13 @@ export default function Contact() {
           </div>
           <button onClick={openBooking} className="btn btn-p mt-8 justify-center">Pick a time</button>
         </div>
-        <form onSubmit={send} className="card p-6">
+        <form onSubmit={send} className="card p-4 sm:p-6">
           <h3 className="mb-4 font-semibold">Message me or ask me about my work</h3>
           <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
           <input name="name" required placeholder="Your name" className="field" />
           <input name="email" type="email" required placeholder="Your email" className="field" />
           <select name="topic" className="field"><option>Question about the portfolio</option><option>Job opportunity</option><option>Consulting / project</option><option>Something else</option></select>
-          <textarea name="message" required rows={6} placeholder="What would you like to know?" className="field" />
+          <textarea name="message" required rows={4} placeholder="What would you like to know?" className="field sm:[rows:6]" />
           <button className="btn btn-p w-full justify-center" disabled={st === "sending"}>{st === "sending" ? "Sending…" : "Send message"}</button>
           {st === "sent" && <p className="mt-3 text-sm text-emerald-400">Sent. I'll reply to your email soon.</p>}
           {st === "error" && <p className="mt-3 text-sm text-red-400">Couldn't send. Please email {p.email}.</p>}

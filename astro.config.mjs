@@ -19,4 +19,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  server: {
+      allowedHosts: ['engorge-scone-glimmer.ngrok-free.dev']
+    },
 });
